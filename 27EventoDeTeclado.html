@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de Teclado</title>
+    <script>
+        function exibir(){
+            var campoTexto = document.getElementById("campo").value;
+            window.alert(campoTexto);
+        }
+
+        function mostrar(){
+            var campoTexto2 = document.getElementById("campo2").value;
+        }
+
+        function retornar(){
+            var campoTexto3 = document.getElementById("campo3").value;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="campo" onkeyup="exibir()">
+    <input type="text" id="campo2" onkeydown="mostrar()">
+    <input type="text" id="campo3" onkeypress="retornar()">
+</body>
+</html>
